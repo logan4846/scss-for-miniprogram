@@ -4,6 +4,11 @@
 
 ![目录](http://pd0zb8hw9.bkt.clouddn.com/666.png "目录")
 
+#### 开始
+
+- 将项目放到和小程序同级
+- 进入项目，运行yarn start即可
+
 #### 命令
 
 - yarn start ：编译并监听
