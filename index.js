@@ -16,11 +16,11 @@ function handleStatsMessage(err,stats) {
     }
     let ob = stats.toJson({
         depth: true
-    })
+    });
     console.log(chalk.white(`输出目录：${ob.outputPath}，编译耗时：${ob.time}ms,构建时间戳：${ob.builtAt}`));
     console.log(chalk.white("编译文件列表："));
     ob.assets.forEach((asset) => {
-       console.log(chalk.green(asset.name));
+       console.log(chalk.green(path.resolve("../",asset.name)));
     });
     console.log(chalk.white(`编译完成${env === 'dev' ? '，监听中...':''}`));
 }
