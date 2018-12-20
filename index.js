@@ -8,6 +8,8 @@ var config = require('./webpack.config.js');
 var outputConfig = require('./output.config.js');
 var env = process.env.NODE_ENV;
 
+console.log(1)
+
 function handleStatsMessage(err,stats) {
     if (err || stats.hasErrors()) {
         console.log(chalk.red('编译失败'), chalk.red(JSON.stringify(err)));
