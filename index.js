@@ -8,7 +8,7 @@ var config = require('./webpack.config.js');
 var outputConfig = require('./output.config.js');
 var env = process.env.NODE_ENV;
 
-console.log(2)
+console.log(3)
 
 function handleStatsMessage(err,stats) {
     if (err || stats.hasErrors()) {
